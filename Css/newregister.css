@@ -1,0 +1,65 @@
+body, html{
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../Imagenes/regresarlogin.png) no-repeat center top;
+    background-size: cover;
+    font-family: 'Monseratt', sans-serif;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-background-sixe: cover;
+    -moz-background-sixe: cover;
+    -moz-background-sixe: cover ;
+    background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    margin-bottom: 7px;
+    font-family: 'Monseratt', sans-serif;
+    color:rgba(255, 255, 255, 0.856);
+    font-weight: bolder;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+p{
+    text-align: center;
+    font-size: 28px;
+    margin: 5px;
+    font-family: 'Monseratt', sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+    -webkit-text-stroke: 1.3px;
+    -webkit-text-stroke-color: black;
+}
+
+
+.regresar{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #ff0404;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin: none;
+    text-decoration: none;
+  }
+  
+  .regresar:hover {
+    cursor: pointer;
+    background: #ff6b6b;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 4px 4px 16px 4px rgba(0,0,0,0.5);
+    
+  }
