@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Perfil Cliente</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../Css/perfilcliente.php" media="all" />
+		
+	</head>
+	<body>				
+					<div class="header">
+						<img class="avatar" src="../Imagenes/perfilcliente.jpg">
+						<h1 class="user-name"><?php echo $cliente->nombres; ?></h1>
+						<p class="user-dates"><?php echo $cliente->cedula; ?> &nbsp;&bull;&nbsp; <?php echo $cliente->direccion; ?> &nbsp;&bull;&nbsp; <?php echo $cliente->telefono; ?></p>
+					</div>
+					<center>
+					<div class="socials">
+				
+								<div class="columnacompras">
+									<li><a href="#" class=""><img class="foto" src="../imagenes/compras.png" width="78" height="78"><span class="label"></span><br></a></li><article>Compras</article>
+								</div>
+								<div class="columnamascota">
+									<li><a href="mascota_controller.php?action=index&dueno=<?php echo $cliente->cedula ?>" class=""><img class="foto" src="../imagenes/mascota.png" width="85" height="85"><span class="label"></span><br></a></li><article>Tu Macota</article>
+								</div>
+								<div class="columnaconsultas">
+									<li><a href="#" class=""><img class="foto" src="../imagenes/consultas.png" width="80" height="80"><span class="label"></span><br></a></li><article>Consultas</article>
+								</div>
+								<div class="columnahome">
+									<li><a href="#" class=""><img class="foto" src="../Imagenes/home.png" width="87" height="77"><span class="label"></span><br></a></li><article>Pagína principal</article>
+								</div>
+								<div class="columnaupdate">
+									<li><a href="cliente_controller.php?action=update&cedula=<?php echo $cliente->cedula ?>" class=""><img src="../imagenes/editar.png" width="77" height="77"><span class="label"></span><br></a></li><article>Editar Datos</article>
+								</div>
+								<div class="columnacerrar">
+									<li><a href="../Views/Administrador/logout.php" class=""><img class="foto" src="../imagenes/cerrar.png" width="80" height="80"><span class="label"></span><br></a></li><article>Cerrar Sesión</article>
+								</div>
+					</div>
+					</center>
+					<footer>
+						<span class="copyright">&copy; Veterinaria Express</a>.</span>
+					</footer>	
+	</body>
+</html>

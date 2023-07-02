@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UPDATE</title>
+    <link rel="stylesheet" href="../../Css/update.css">
+  </head>
+  <body>
+    <div class="update">
+    
+      <div class="login-box">
+        <img src="../../Imagenes/lapiz.png" class="avatar" alt="Avatar Image">
+        <h1>INFORMACIÓN PERSONAL</h1>
+        <center>
+        <p>Cambia los datos que desees</p>
+        </center>
+    <form action='Controllers/cliente_controller.php' method='POST'>
+      <input type='hidden' name='action' value='update'>
+          <table>
+          <td class="columnaizq">
+            <a>Cédula:</a>
+            <input type="text" name="cedula" id="cedula" value='<?php echo $cliente->cedula; ?>'>
+            <br><a>Nombres:</a>
+            <input type="text" name="nombres" id="nombres" value='<?php echo $cliente->nombres; ?>'>
+            <br><a>Teléfono:</a>
+            <input type="text" name="telefono" id="telefono" value='<?php echo $cliente->telefono; ?>'>
+            <br><a>Dirección:</a>
+            <input type="text"  name="direccion" id="dirección" value='<?php echo $cliente->direccion; ?>'>
+          </td>
+          <td class="columnader">
+            <a>Usuario:</a>
+            <br><input type="text" name="usuario" id="usuario" value='<?php echo $cliente->usuario; ?>'>
+            <br><a>Contraseña:</a>
+            <input type="text" name="clave" id="clave" value='<?php echo $cliente->clave; ?>'>
+            <br><br><br>
+            <center>
+              <input type="submit" value="Actualizar">
+            </center>
+          </td>
+        </table>
+    </form>
+      </div>
+    </div>
+  </body>
+</html>
